@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	font-family: Comic Sans MS;
+}
+
+input[type=submit] {
+	-webkit-appearance: none;
+	border-radius: 3px;
+}
+
+input[type=submit]:hover {background-color: #B0C4DE}
+
+input[type=submit]:active {
+  background-color: #B0C4DE;
+  transform: translateY(2px);
+}
+
+.cont {
+	width: 400px;
+	display: inline-block;
+	align: center;
+	vertical-align: center;
+	padding: 100px 0;
+	margin-bottom: 10px;
+	background-color: red;
+	color: white;
+	font-weight: light;
+}
+
+.cont1 {
+	width: 400px;
+	display: inline-block;
+	align: center;
+	vertical-align: center;
+	padding: 70px 0;
+	margin-bottom: 10px;
+	background-color: green;
+	color: white;
+	font-weight: light;
+}
