@@ -58,17 +58,11 @@ public class Game extends HttpServlet {
 		}
 		session.setAttribute("count", i);
 		
-        // Implement random number ** fix
-//        Integer mainNumber = null;
-//        if (session.getAttribute("count") == null) {
-//        	Random rand = new Random();
-//        	mainNumber = rand.nextInt(100);
-//        }
-		
-		Integer mainNumber = 15;
+		Random rand = new Random();
 		if (session.getAttribute("mainNumber") == null) {
-			session.setAttribute("mainNumber", mainNumber);
+			session.setAttribute("mainNumber", rand.nextInt(100));
 		}
+		Integer mainNumber = (Integer)session.getAttribute("mainNumber");
 		
 		// Checks for "empty" or null values for "number"
 //		if (request.getParameter("number").equals(null) || (request.getParameter("number").equals(""))) {
